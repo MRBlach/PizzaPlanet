@@ -1,0 +1,270 @@
+/* BASE STYLINGS */
+  /* desired fonts, colors, and icons */
+    font-family: 'Recursive', sans-serif;
+    font-family: 'Rowdies', cursive;
+    #e8505b #f9d56e #f3ecc2 #14b1ab #251f44
+    <i class="fas fa-pizza-slice"></i>
+    <i class="fas fa-chart-pie"></i>
+    <i class="fas fa-globe-europe"></i>
+    <i class="fas fa-space-shuttle"></i>
+    <i class="fab fa-rocketchat"></i>
+    <i class="fas fa-mobile-alt"></i>
+    <i class="fab fa-facebook"></i>
+    <i class="fab fa-twitter"></i>
+    <i class="fas fa-share-alt-square"></i>
+    <i class="fab fa-reddit-alien"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star-half-alt"></i>
+    <i class="far fa-star"></i>
+    /* eliminates the need to calculate exact width and height of nested elements */
+    * {
+      box-sizing: border-box;
+    }
+
+    /* set the standard stylings for entire page */
+    body {
+      color: #251f44;
+      background-image: url(images/space.jpg): ;
+      margin: 0;
+      font-family: 'Recursive', sans-serif;
+      font-size: 1.5rem;
+    }
+
+    /* set the standard stylings for all h1 elements */
+    h1 {
+      font-family: 'Rowdies', cursive;
+      color: #e8505b;
+      line-height: ;
+      letter-spacing: .5rem;
+      font-size: 5rem;
+      text-shadow: 5px 5px #f3ecc2;
+      margin-bottom: 0;
+    }
+
+    /* set the standard stylings for all h2 elements */
+    h2 {;
+      color: ;
+      text-transform: uppercase;
+      line-height: ;
+      letter-spacing: ;
+    }
+
+    /* set the standard stylings for all h3 elements */
+    h3 {
+      color: ;
+      text-transform: ;
+      line-height: ;
+      letter-spacing: ;
+    }
+
+    /* set the standard stylings for all p elements */
+    p {
+      color: ;
+      text-transform: ;
+      line-height: ;
+      letter-spacing: ;
+    }
+
+    /*  set the standard styling for all img tags listed on html page */
+    img {
+      max-width: 100%;
+      border-radius: ;
+    }
+
+    ul {
+      display: inline;
+    }
+
+    li {
+
+    }
+
+/* PSEUDO-CLASSES */
+    /* set style for anchor links */
+    a:link {
+    color: ;
+    text-decoration: none;
+    }
+
+    /* set style for anchor links that have already been visited */
+    a:visited {
+    color: ;
+    }
+
+    /* set style for anchor links upon hover over */
+    a:hover {
+    color: ;
+    }
+
+    /* set style for anchor links that are currently active */
+    a:active {
+    color: ;
+    }
+
+
+    .fas,
+    .fab,
+    .far {
+      font-size: 2rem;
+      color: #f9d56e;x
+    }
+    .fa-star,
+    .fa-star-half-alt {
+      font-size: 1rem;
+    }
+    .fa-pizza-slice {
+      font-size: 5rem;
+      padding: 0 10px 5px 20px;
+      text-shadow: none;
+    }
+    .fa-reddit-alien,
+    .fa-share-alt-square {
+      font-size: 2rem;
+    }
+/* MAIN STYLINGS */
+    /* this section used to set the basic stylings such as  */
+    .main-header,
+    .main-footer {
+      background-image: url(images/space.jpeg);
+      background-size: contain;
+      text-align: center;
+      text-transform: uppercase;
+      height: 300px;
+      padding: 50px 50px 20px;
+      border-bottom: .7rem solid  #e8505b;
+    }
+    .main-footer {
+      padding-top: 20px;
+      border-bottom: none;
+      border-top: .7rem solid #e8505b;
+      height: 3rem;
+      color: #f3ecc2;
+    }
+
+    .title {
+      color: #14b1ab;
+      font-weight: bold;
+      border-top: .5rem dotted #f9d56e;
+    }
+
+    .yellow-stripe {
+      border-bottom: .5rem solid #f9d56e;
+    }
+    .blue-stripe {
+      border-bottom: .3rem solid #14b1ab;
+    }
+
+
+    .flex-container {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .navbar {
+      background-color: #251f44;
+      border-right: .3rem solid #14b1ab;
+      flex: 3;
+      text-align: center;
+
+    }
+
+    main {
+      flex: 8;
+    }
+    .pie {
+      padding-bottom: 10px;
+      border-bottom: 5px dotted lightgrey;
+    }
+    .primary-content,
+    .secondary-content {
+    }
+
+    .intro {
+
+    }
+
+    .secondary-content {
+
+    }
+
+    .indirect-content {
+      color: white;
+      background-color: #251f44;
+      border-left: .3rem solid #14b1ab;
+      text-align: center;
+      flex: 1;
+      font-size: 1.1rem;
+    }
+    .review {
+      border: 2px solid lightgrey;
+      display: inline-block;
+    }
+    .reviewer-name {
+      float: right;
+    }
+    .reviewer {
+      height: 3rem;
+    }
+    blockquote {
+      padding-bottom: 8rem ;
+      font-style: italic;
+    }
+    .quote {
+      border-bottom: 2px solid lightgrey;
+      border-top: 2px solid lightgrey;
+    }
+
+    .main-footer {
+
+    }
+
+    .copy-write {
+
+    }
+
+    .social-media {
+
+    }
+
+/* FLOATED COLUMNS */
+    /* list classes you wish to float */
+.navbar {
+}
+
+.indirect-content {
+}
+
+.primary-content,
+.secondary-content {
+  text-align: center;
+}
+
+
+
+/* FLOAT CLEAR FIX */
+    /* you must add a class="group" to any html elements you wish to float*/
+    .group:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+
+/* MEDIA QUERIES FOR RESIZING DEVICE WIDTH */
+    /* queries can only change html elements, classes, and ids that have been originally styled above*/
+
+
+    @@media (max-width: 1024px){
+      .primary-content,
+      .secondary-content {
+        width 90%;
+        }
+
+      }
+
+    @media (max-width: 768px) {
+      .primary-content,
+      .secondary-content {
+        width 100%;
+        padding: ;
+        }
